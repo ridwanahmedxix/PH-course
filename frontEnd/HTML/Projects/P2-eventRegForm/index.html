@@ -6,7 +6,17 @@
     <title>Event Registration Form</title>
   </head>
   <body>
-    <form>
+    <form
+      style="
+        width: 800px;
+        height: 500px;
+        border: 2px solid black;
+        padding: 10px 18px 30px 18px;
+        margin: 40px auto;
+      "
+    >
+      <h2>Event Registration Form</h2>
+
       <label for="fName"> First Name</label> <br />
       <input required id="fName" type="text" />
       <br />
@@ -26,6 +36,7 @@
       <label for="address">Address (optional)</label>
       <br />
       <textarea style="width: 300px; height: 80px" id="address"></textarea>
+      <br />
       <br />
       <input type="submit" value="Submit" />
     </form>
