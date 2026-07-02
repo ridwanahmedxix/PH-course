@@ -121,7 +121,7 @@ nav ul li {
   margin-top: 50px;
   margin-left: 100px;
   margin-right: 100px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 .sec2Card {
@@ -131,7 +131,7 @@ nav ul li {
   margin: 0px 15px;
 }
 .sec2Card img {
-  background-color: crimson;
+  background-color: rgb(20, 220, 70);
   color: white;
   padding: 10px;
   border-radius: 50%;
