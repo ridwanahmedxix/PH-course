@@ -34,3 +34,32 @@ nav ul li {
 }
 
 /* SECTION 1 CODE START  */
+.sec1 {
+  background-image: url("./assets/hero-bg.png");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  text-align: center;
+}
+.parentSec1 {
+  padding: 60px 0px;
+}
+.eano {
+  background-color: white;
+  padding: 5px 17px;
+  font-size: 18px;
+  color: rgb(3, 165, 3);
+  border-radius: 16px;
+  border: none;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.heroTitle {
+  font-size: 67px;
+  color: white;
+  margin-bottom: 14px;
+}
+.heroTitle span {
+  color: rgb(3, 165, 3);
+}
