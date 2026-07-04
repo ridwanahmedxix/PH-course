@@ -8,7 +8,7 @@ header {
   background-color: rgb(2, 147, 2);
   color: white;
   text-align: center;
-  padding: 30px 0px;
+  padding: 40px 0px;
 }
 header h2 {
   font-size: 40px;
@@ -16,4 +16,9 @@ header h2 {
 }
 header p {
   font-size: 20px;
+  word-spacing: 4px;
+}
+nav {
+  background-color: black;
+  color: white;
 }
