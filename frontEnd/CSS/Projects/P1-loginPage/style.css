@@ -6,3 +6,14 @@
 body {
   background-color: rgb(231, 25, 25);
 }
+.parentDiv {
+  background-color: white;
+  display: flex;
+  width: 1400px;
+  height: 600px;
+  margin: 100px auto;
+}
+.imgDiv img {
+  width: 439px;
+  margin-right: 100px;
+}
