@@ -26,3 +26,19 @@ body {
   font-size: 40px;
   padding: 20px 0px;
 }
+.infoDiv form {
+  text-align: left;
+}
+.useandPass {
+  font-size: 24px;
+  padding: 20px 0px;
+}
+.userNamPass {
+  margin: 10px 0px;
+  width: 85%;
+  height: 45px;
+}
+.infoDiv form input::placeholder {
+  font-size: 20px;
+  padding: 10px 10px 10px 5px;
+}
