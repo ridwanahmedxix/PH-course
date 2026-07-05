@@ -9,11 +9,20 @@ body {
 .parentDiv {
   background-color: white;
   display: flex;
-  width: 1400px;
+  width: 1100px;
   height: 600px;
   margin: 100px auto;
 }
 .imgDiv img {
   width: 439px;
-  margin-right: 100px;
+  margin-right: 70px;
+}
+.infoDiv {
+  width: 100%;
+  border: 2px solid rgb(13, 0, 128);
+}
+.infoDiv h2 {
+  text-align: center;
+  font-size: 40px;
+  padding: 20px 0px;
 }
