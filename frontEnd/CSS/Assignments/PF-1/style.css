@@ -208,7 +208,8 @@ nav {
   margin-bottom: 50px;
 }
 .sec3SingleBox {
-  border: 2px solid black;
+  /* border: 2px solid black; */
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   padding: 60px 10px;
 }
 .sec3SingleBox h3 {
