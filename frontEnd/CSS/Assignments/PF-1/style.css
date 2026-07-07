@@ -327,3 +327,62 @@ footer {
   justify-content: center;
   border-radius: 50%;
 }
+.footer2nd h3 {
+  font-size: 35px;
+  padding-bottom: 15px;
+}
+.footer2nd input {
+  width: 450px;
+  height: 50px;
+  border: none;
+  margin: 15px 0px;
+  outline-color: #13aa52;
+}
+.footer2nd input::placeholder {
+  font-size: 20px;
+  padding: 20px;
+}
+.footer2nd textarea {
+  resize: none;
+  width: 450px;
+  height: 50px;
+  border: none;
+  margin: 15px 0px 20px 0px;
+  overflow: hidden;
+  outline-color: #13aa52;
+}
+.footer2nd textarea::placeholder {
+  font-size: 20px;
+  padding: 10px;
+}
+.footerBtn {
+  background-color: #e7064d;
+  border: 2px solid #e7064d;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px 0;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  font-size: 19px;
+  font-weight: 400;
+  outline: none;
+  outline: 0;
+  padding: 10px 25px;
+  /* margin-left: 15px; */
+  /* margin-right: 15px; */
+  text-align: center;
+  transform: translateY(0);
+  transition:
+    transform 150ms,
+    box-shadow 150ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.lastFooter {
+  background-color: black;
+  color: white;
+  padding: 20px 0px;
+  text-align: center;
+  font-size: 20px;
+}
