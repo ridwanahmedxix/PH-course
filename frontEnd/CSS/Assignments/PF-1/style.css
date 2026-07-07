@@ -59,8 +59,10 @@ nav {
 
 .section1 {
   /* border: 2px solid black; */
-  margin-top: 50px;
+  padding-top: 50px;
+  padding-bottom: 30px;
   margin-bottom: 50px;
+  background-color: #85f2d1;
 }
 .sec1ParentDiv {
   display: flex;
@@ -144,3 +146,76 @@ nav {
   /* border: 2px solid green; */
   width: 700px;
 }
+
+/* SECTION 2 CODE START  */
+.section2 {
+  background-color: #f0d648;
+  width: 1100px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 70px;
+  padding: 70px;
+  border-radius: 17px;
+}
+.aboutParent {
+  text-align: center;
+  /* border: 10x solid rgb(13, 144, 251); */
+}
+.boxParent {
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+.sec2Box {
+  border: 2px dotted black;
+  padding: 10px 0px;
+  border-radius: 10px 20px;
+}
+.aboutParent h3 {
+  font-size: 32px;
+  padding-bottom: 15px;
+}
+.aboutParentPtag {
+  line-height: 26px;
+  color: #333433;
+}
+
+/* SECTION 3 CODE START  */
+.section3 {
+  /* border: 3px solid black; */
+  padding: 50px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  margin-left: 100px;
+  margin-right: 100px;
+  text-align: center;
+}
+.sec31stPara h2 {
+  font-size: 34px;
+  padding-bottom: 15px;
+}
+.sec31stPara p {
+  width: 800px;
+  margin: auto;
+  padding-bottom: 30px;
+}
+.sec3BoxParent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 27px;
+  margin-bottom: 50px;
+}
+.sec3SingleBox {
+  border: 2px solid black;
+  padding: 60px 10px;
+}
+.sec3SingleBox h3 {
+  padding: 10px 0px;
+}
+.sec3SingleBox p {
+  color: #333433;
+}
+
+/* SECTION 4 CODE START  */
