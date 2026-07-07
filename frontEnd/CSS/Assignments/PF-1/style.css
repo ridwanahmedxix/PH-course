@@ -187,7 +187,7 @@ nav {
   /* border: 3px solid black; */
   padding: 50px;
   margin-top: 50px;
-  margin-bottom: 100px;
+  margin-bottom: 10px;
   margin-left: 100px;
   margin-right: 100px;
   text-align: center;
@@ -222,13 +222,14 @@ nav {
 /* SECTION 4 CODE START  */
 
 .section4 {
-  margin-left: 200px;
+  margin-left: 100px;
   margin-right: 100px;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   padding: 100px;
+  /* text-align: center; */
 }
 .section4H2Tag {
-  text-align: center;
+  text-align: left;
   font-size: 40px;
   padding-bottom: 50px;
 }
@@ -237,4 +238,22 @@ nav {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 30px;
+}
+.sec4SingleCard h3 {
+  font-size: 30px;
+  padding-bottom: 30px;
+}
+.sec4SingleCard h4 {
+  font-size: 20px;
+  padding-bottom: 15px;
+  color: #333433;
+}
+.sec4SingleCard h5 {
+  font-size: 14px;
+  padding-bottom: 10px;
+  color: #333433;
+}
+.sec4SingleCardHR {
+  margin-top: 25px;
+  margin-bottom: 5px;
 }
