@@ -220,3 +220,21 @@ nav {
 }
 
 /* SECTION 4 CODE START  */
+
+.section4 {
+  margin-left: 200px;
+  margin-right: 100px;
+  border: 2px solid black;
+  padding: 100px;
+}
+.section4H2Tag {
+  text-align: center;
+  font-size: 40px;
+  padding-bottom: 50px;
+}
+
+.sec4CardParent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+}
