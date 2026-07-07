@@ -53,3 +53,16 @@ nav {
   box-shadow: rgba(0, 0, 0, 0.15) 0 3px 9px 0;
   transform: translateY(-2px);
 }
+
+/* SECTION 1 CODE START  */
+
+.section1 {
+  border: 2px solid black;
+}
+.sec1ParentDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 200px;
+  margin-right: 100px;
+}
