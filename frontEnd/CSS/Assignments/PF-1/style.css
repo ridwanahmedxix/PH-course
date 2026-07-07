@@ -292,3 +292,38 @@ nav {
 }
 
 /* FOOTER SECTION CODE START  */
+footer {
+  background-color: #0fbaba;
+  padding: 100px;
+}
+.footerParent {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer1st h3 {
+  font-size: 35px;
+  padding-bottom: 15px;
+}
+.footer1st p {
+  padding-bottom: 20px;
+}
+
+.footerIconDiv {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.footerIconDiv i {
+  background-color: #fcfffe;
+  color: rgb(232, 5, 5);
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
