@@ -261,3 +261,32 @@ nav {
 .sec4Button {
   margin: 40px auto 20px auto;
 }
+
+/* SECTION 5 CODE START  */
+
+.section5 {
+  width: 80%;
+  margin: 50px auto 100px auto;
+}
+.section5 h2 {
+  text-align: center;
+  font-size: 35px;
+  padding-bottom: 50px;
+}
+.sec5Parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 200px;
+  gap: 10px;
+}
+.sec5Box2,
+.sec5Box4,
+.sec5Box5 {
+  grid-row: span 2;
+}
+.sec5Box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
