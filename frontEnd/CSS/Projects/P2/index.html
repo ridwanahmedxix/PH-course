@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FIFA World Cup 2026 | AI Match Prediction Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ================= LOADING SCREEN ================= -->
+    <div id="loadingScreen">
+      <div class="loader-content">
+        <div class="loader-ball">⚽</div>
+        <div class="loader-text">FIFA WORLD CUP <span>2026</span></div>
+        <div class="loader-bar">
+          <div class="loader-bar-fill" id="loaderFill"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= ANIMATED BACKGROUND ================= -->
+    <div class="bg-layer">
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+      <div class="gradient-orb orb-3"></div>
+      <div class="floating-balls" id="floatingBalls"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="mouse-glow" id="mouseGlow"></div>
+
+    <!-- ================= HEADER ================= -->
+    <header id="siteHeader">
+      <div class="nav-wrap">
+        <a href="#home" class="logo">
+          <span class="logo-ball">⚽</span>
+          <span class="logo-text"
+            >WC<span class="accent">26</span>
+            <span class="logo-sub">PREDICT</span></span
+          >
+        </a>
+
+        <nav id="mainNav">
+          <a href="#home" class="nav-link active">Home</a>
+          <a href="#matches" class="nav-link">Matches</a>
+          <a href="#predictions" class="nav-link">Predictions</a>
+          <a href="#standings" class="nav-link">Standings</a>
+          <a href="#teams" class="nav-link">Teams</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <button id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <div id="mobileMenu">
+      <a href="#home">Home</a>
+      <a href="#matches">Matches</a>
+      <a href="#predictions">Predictions</a>
+      <a href="#standings">Standings</a>
+      <a href="#teams">Teams</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <main>
+      <!-- ================= HERO ================= -->
+      <section id="home" class="hero">
+        <div class="hero-content">
+          <div class="eyebrow fade-up">
+            UNITED STATES · MEXICO · CANADA — JUNE 11 – JULY 19
+          </div>
+          <h1 class="hero-title fade-up">
+            <span class="typing-line" id="typingLine">FIFA WORLD CUP</span>
+            <span class="hero-year">2026</span>
+          </h1>
+          <p class="hero-sub fade-up">
+            AI Match Prediction Platform — data-driven forecasts for every
+            fixture of the 48-team tournament.
+          </p>
+          <div class="hero-btns fade-up">
+            <a href="#matches" class="btn btn-primary">Today's Matches</a>
+            <a href="#predictions" class="btn btn-ghost">View Predictions</a>
+          </div>
+
+          <div class="countdown-box fade-up" id="countdownBox">
+            <div class="countdown-label">Kickoff Countdown</div>
+            <div class="countdown-grid">
+              <div class="cd-unit">
+                <span id="cdDays">00</span><small>Days</small>
+              </div>
+              <div class="cd-unit">
+                <span id="cdHours">00</span><small>Hours</small>
+              </div>
+              <div class="cd-unit">
+                <span id="cdMinutes">00</span><small>Minutes</small>
+              </div>
+              <div class="cd-unit">
+                <span id="cdSeconds">00</span><small>Seconds</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-orb-field" aria-hidden="true">
+          <div class="hero-football">⚽</div>
+        </div>
+
+        <a href="#dashboard" class="scroll-down" aria-label="Scroll down">
+          <span></span>
+        </a>
+      </section>
+
+      <!-- ================= LIVE DASHBOARD ================= -->
+      <section id="dashboard" class="dashboard">
+        <div class="section-inner">
+          <div class="dash-top">
+            <div class="clock-card glass fade-up">
+              <div class="clock-label">Live Clock</div>
+              <div class="clock-time" id="liveClock">00:00:00</div>
+              <div class="clock-date" id="liveDate">Loading date…</div>
+            </div>
+          </div>
+
+          <div class="stat-grid">
+            <div class="stat-card glass fade-up">
+              <div class="stat-icon">📅</div>
+              <div class="stat-value" data-target="20" id="statMatches">0</div>
+              <div class="stat-label">Upcoming Matches</div>
+            </div>
+            <div class="stat-card glass fade-up">
+              <div class="stat-icon">🤖</div>
+              <div class="stat-value" data-target="20" id="statPredictions">
+                0
+              </div>
+              <div class="stat-label">Predictions Today</div>
+            </div>
+            <div class="stat-card glass fade-up">
+              <div class="stat-icon">🎯</div>
+              <div class="stat-value" data-target="87" id="statAccuracy">0</div>
+              <div class="stat-label">Model Accuracy %</div>
+            </div>
+            <div class="stat-card glass fade-up">
+              <div class="stat-icon">🌍</div>
+              <div class="stat-value" data-target="48" id="statCountries">
+                0
+              </div>
+              <div class="stat-label">Competing Nations</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= TOP FAVORITES ================= -->
+      <section class="favorites">
+        <div class="section-inner">
+          <div class="section-head fade-up">
+            <span class="eyebrow">Power Rankings</span>
+            <h2>Top Title Favorites</h2>
+            <p>Ranked by our model's championship win probability.</p>
+          </div>
+          <div class="favorites-list" id="favoritesList"></div>
+        </div>
+      </section>
+
+      <!-- ================= MATCHES ================= -->
+      <section id="matches" class="matches">
+        <div class="section-inner">
+          <div class="section-head fade-up">
+            <span class="eyebrow">Fixtures</span>
+            <h2>Matches &amp; Predictions</h2>
+            <p>Every fixture, forecast by the WC26 Predict engine.</p>
+          </div>
+
+          <div class="controls fade-up">
+            <div class="search-box">
+              <span class="search-icon">🔍</span>
+              <input
+                type="text"
+                id="searchInput"
+                placeholder="Search by country or stadium…"
+              />
+            </div>
+            <div class="filter-bar" id="filterBar">
+              <button class="filter-btn active" data-filter="all">All</button>
+              <button class="filter-btn" data-filter="Group Stage">
+                Group Stage
+              </button>
+              <button class="filter-btn" data-filter="Round of 32">
+                Round of 32
+              </button>
+              <button class="filter-btn" data-filter="Round of 16">
+                Round of 16
+              </button>
+              <button class="filter-btn" data-filter="Quarter Final">
+                Quarter Final
+              </button>
+              <button class="filter-btn" data-filter="Semi Final">
+                Semi Final
+              </button>
+              <button class="filter-btn" data-filter="Final">Final</button>
+              <button class="filter-btn" data-filter="Upcoming">
+                Upcoming
+              </button>
+              <button class="filter-btn" data-filter="Completed">
+                Completed
+              </button>
+            </div>
+          </div>
+
+          <div class="match-grid" id="matchGrid"></div>
+          <p class="no-results" id="noResults" hidden>
+            No matches found. Try a different search or filter.
+          </p>
+        </div>
+      </section>
+
+      <!-- ================= PREDICTIONS / AI ANALYSIS TEASER ================= -->
+      <section id="predictions" class="ai-section">
+        <div class="section-inner ai-inner">
+          <div class="ai-copy fade-up">
+            <span class="eyebrow">How it works</span>
+            <h2>AI-Powered Match Analysis</h2>
+            <p>
+              Every prediction on WC26 Predict is generated from a blended model
+              of recent form, expected goals, possession tendencies and historic
+              head-to-head data. Tap any match card to open the full breakdown,
+              including a written analysis explaining exactly why the model
+              favors one side.
+            </p>
+            <ul class="ai-points">
+              <li>
+                <span class="dot"></span> Recent form weighted over the last 5
+                fixtures
+              </li>
+              <li>
+                <span class="dot"></span> Expected goals (xG) and possession
+                modelling
+              </li>
+              <li>
+                <span class="dot"></span> Stage-adjusted confidence scoring
+              </li>
+            </ul>
+            <a href="#matches" class="btn btn-primary">Explore Every Fixture</a>
+          </div>
+          <div class="ai-visual fade-up">
+            <div class="radar-card glass">
+              <div class="radar-ring r1"></div>
+              <div class="radar-ring r2"></div>
+              <div class="radar-ring r3"></div>
+              <div class="radar-center">AI</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= STANDINGS ================= -->
+      <section id="standings" class="standings">
+        <div class="section-inner">
+          <div class="section-head fade-up">
+            <span class="eyebrow">Group Stage</span>
+            <h2>Standings Snapshot</h2>
+            <p>
+              Projected group positions based on current form and prediction
+              data.
+            </p>
+          </div>
+          <div class="standings-tabs" id="standingsTabs"></div>
+          <div class="standings-table-wrap glass fade-up">
+            <table class="standings-table" id="standingsTable">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Team</th>
+                  <th>P</th>
+                  <th>W</th>
+                  <th>D</th>
+                  <th>L</th>
+                  <th>GD</th>
+                  <th>Pts</th>
+                </tr>
+              </thead>
+              <tbody id="standingsBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= TEAMS ================= -->
+      <section id="teams" class="teams">
+        <div class="section-inner">
+          <div class="section-head fade-up">
+            <span class="eyebrow">The Contenders</span>
+            <h2>Teams In Focus</h2>
+            <p>
+              Current form for every nation featured in our prediction engine.
+            </p>
+          </div>
+          <div class="teams-grid" id="teamsGrid"></div>
+        </div>
+      </section>
+
+      <!-- ================= ABOUT ================= -->
+      <section id="about" class="about">
+        <div class="section-inner about-inner">
+          <div class="about-visual fade-up">
+            <div class="about-card glass">
+              <div class="about-stat">
+                <span>10M+</span>Data points analyzed
+              </div>
+              <div class="about-stat"><span>48</span>Nations tracked</div>
+              <div class="about-stat"><span>87%</span>Historical accuracy</div>
+            </div>
+          </div>
+          <div class="about-copy fade-up">
+            <span class="eyebrow">About the platform</span>
+            <h2>Built for Football, Powered by Data</h2>
+            <p>
+              WC26 Predict is an independent fan-built platform that turns raw
+              football statistics into readable forecasts. We combine recent
+              squad form, tournament-stage pressure and expected-goals modelling
+              to project outcomes for all 104 matches of the 2026 FIFA World Cup
+              — the first edition to be hosted across three nations and expanded
+              to 48 teams.
+            </p>
+            <p>
+              This is a concept demo: all fixtures, odds and analysis are
+              illustrative projections generated for entertainment, not official
+              FIFA data or betting advice.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= CONTACT ================= -->
+      <section id="contact" class="contact">
+        <div class="section-inner contact-inner">
+          <div class="section-head fade-up">
+            <span class="eyebrow">Get in touch</span>
+            <h2>Contact the Team</h2>
+            <p>Questions, feedback, or partnership ideas — send us a note.</p>
+          </div>
+          <form class="contact-form glass fade-up" id="contactForm">
+            <div class="form-row">
+              <div class="form-field">
+                <label for="cName">Name</label>
+                <input type="text" id="cName" required />
+              </div>
+              <div class="form-field">
+                <label for="cEmail">Email</label>
+                <input type="email" id="cEmail" required />
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="cMessage">Message</label>
+              <textarea id="cMessage" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <p class="form-status" id="formStatus" hidden>
+              Message sent — thanks for reaching out!
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+      <div class="section-inner footer-inner">
+        <div class="footer-brand">
+          <a href="#home" class="logo">
+            <span class="logo-ball">⚽</span>
+            <span class="logo-text"
+              >WC<span class="accent">26</span>
+              <span class="logo-sub">PREDICT</span></span
+            >
+          </a>
+          <p>
+            AI-driven predictions for the 2026 FIFA World Cup across the United
+            States, Mexico and Canada.
+          </p>
+          <div class="social-icons">
+            <a href="#" aria-label="X">𝕏</a>
+            <a href="#" aria-label="Instagram">◎</a>
+            <a href="#" aria-label="YouTube">▶</a>
+            <a href="#" aria-label="Discord">◆</a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Navigate</h4>
+          <a href="#home">Home</a>
+          <a href="#matches">Matches</a>
+          <a href="#predictions">Predictions</a>
+          <a href="#standings">Standings</a>
+          <a href="#teams">Teams</a>
+        </div>
+
+        <div class="footer-links">
+          <h4>Resources</h4>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+          <a href="#matches">Fixture List</a>
+          <a href="#predictions">Methodology</a>
+        </div>
+
+        <div class="footer-news">
+          <h4>Newsletter</h4>
+          <p>Get weekly prediction recaps in your inbox.</p>
+          <form id="newsletterForm" class="newsletter-form">
+            <input type="email" placeholder="you@example.com" required />
+            <button type="submit">Join</button>
+          </form>
+          <p class="form-status" id="newsStatus" hidden>
+            Subscribed! Welcome aboard.
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          &copy; <span id="footerYear"></span> WC26 Predict. Concept project —
+          not affiliated with FIFA. All predictions are illustrative.
+        </p>
+      </div>
+    </footer>
+
+    <!-- ================= MATCH MODAL ================= -->
+    <div class="modal-overlay" id="modalOverlay">
+      <div class="modal-box glass" id="modalBox">
+        <button class="modal-close" id="modalClose" aria-label="Close">
+          ✕
+        </button>
+        <div class="modal-content" id="modalContent"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
