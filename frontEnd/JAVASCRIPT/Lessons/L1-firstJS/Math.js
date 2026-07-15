@@ -24,3 +24,12 @@
 // const eggPrice = 100;
 // const totalPrice = myMoney - eggPrice;
 // console.log(totalPrice);
+
+// ===========================================================
+// 3. MULTIPLICATION OPERATION = *
+// ===========================================================
+
+// let egg = 40;
+// let eggPerPicePeice = 10;
+// const totalPrice = eggPerPicePeice * egg;
+// console.log(totalPrice);
