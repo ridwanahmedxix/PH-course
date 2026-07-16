@@ -9,3 +9,15 @@
 // } else {
 //   console.log("Dhorja dan dike ");
 // }
+
+// ================================================
+
+const salary = 70000;
+const isWebDeveloper = true;
+const isBoroLoks = false;
+
+if ((salary >= 80000 && isWebDeveloper === true) || isBoroLoks === true) {
+  console.log(" Hoo , ami jani apne bala manush ");
+} else {
+  console.log(" Jaaa , Mokbul ");
+}
