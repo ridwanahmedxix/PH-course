@@ -1,6 +1,6 @@
 // ! ==================================
 
-// ? While Loop
+// # While Loop
 
 // let i = 1;
 
@@ -11,10 +11,20 @@
 
 // ! ==================================
 
-// ?  Do While Loop
+// #  Do While Loop
+
+// let i = 1;
+// do {
+//   console.log(" Hello World :", i);
+//   i++;
+// } while (i <= 10);
+
+// ! ====================================
+
+// * Do while Loop Deff
 
 let i = 1;
 do {
   console.log(" Hello World :", i);
   i++;
-} while (i <= 10);
+} while (i > 10);
