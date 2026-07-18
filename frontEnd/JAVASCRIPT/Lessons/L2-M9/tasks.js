@@ -43,3 +43,11 @@
 // console.log(sum);
 
 // # =========== Task - 07 ===============
+
+// let NumBer = 7;
+
+// for (let i = 1; i <= 10; i++) {
+//   console.log(NumBer, "X ", i, "=", NumBer * i);
+// }
+
+// # =========== Task - 08 ===============
