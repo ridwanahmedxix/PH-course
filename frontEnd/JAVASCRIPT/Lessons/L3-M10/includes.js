@@ -15,7 +15,15 @@
 
 // #  =============================================
 
-const myNumber = [12, 4, 66, 80, 2];
-const myNumber2 = [22, 43, 55, 5, 9];
-const allNumber = myNumber.concat(myNumber2);
-console.log(allNumber);
+// const myNumber = [12, 4, 66, 80, 2];
+// const myNumber2 = [22, 43, 55, 5, 9];
+// const allNumber = myNumber.concat(myNumber2);
+// console.log(allNumber);
+
+// #  =============================================
+
+// const myNumber = [12, 4, 66, 80, 2];
+// const joined = myNumber.join(" , ");
+// console.log(joined);
+
+// #  =============================================
