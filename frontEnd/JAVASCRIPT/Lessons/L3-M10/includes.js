@@ -37,3 +37,15 @@
 // const myNumber = [12, 4, 66, 80, 2, 4, 7, , 8];
 // const position = myNumber.indexOf(44);
 // console.log("Position of my number :", position);
+
+// #  =============================================
+// const players = ["Messi", "Emi", "Demaria", "Meradona "];
+
+// ------------------------
+// console.log(Array.isArray(players));
+// ------------------------
+// console.log(Array.isArray(5));
+// ------------------------
+// console.log(Array.isArray([5]));
+
+// #  =============================================
