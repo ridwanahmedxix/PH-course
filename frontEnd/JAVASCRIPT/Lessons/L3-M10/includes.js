@@ -27,3 +27,13 @@
 // console.log(joined);
 
 // #  =============================================
+
+// const myNumber = [12, 4, 66, 80, 2, 4, 7, , 8];
+// const position = myNumber.indexOf(4);
+// console.log("Position of my number :", position);
+
+// #  =============================================
+// *   kono number array te na thakle -1 dekhabe
+// const myNumber = [12, 4, 66, 80, 2, 4, 7, , 8];
+// const position = myNumber.indexOf(44);
+// console.log("Position of my number :", position);
