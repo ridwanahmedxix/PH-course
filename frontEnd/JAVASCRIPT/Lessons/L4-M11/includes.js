@@ -5,3 +5,8 @@
 // } else {
 //   console.log("No dot found ");
 // }
+
+// # =====================================================
+
+const fileName = "my file name is an of the has bla bla .pdf";
+console.log(fileName.endsWith(".pdf"));
