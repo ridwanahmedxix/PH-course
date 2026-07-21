@@ -43,3 +43,12 @@
 // }
 
 // # ================================
+
+const inputEmail = "  ridwan@gmail.com   ";
+const savedEmail = "ridwan@gmail.com";
+
+if (inputEmail.trim === savedEmail.trim) {
+  console.log(" Welcome to our website ");
+} else {
+  console.log("Dure gia mor");
+}
