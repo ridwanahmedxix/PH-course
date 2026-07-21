@@ -8,5 +8,8 @@
 
 // # =====================================================
 
-const fileName = "my file name is an of the has bla bla .pdf";
-console.log(fileName.endsWith(".pdf"));
+// const fileName = "my file name is an of the has bla bla .pdf";
+// console.log(fileName.endsWith(".pdf"));
+
+const bossEmail = "@elonbhai.com";
+console.log(bossEmail.startsWith("@"));
