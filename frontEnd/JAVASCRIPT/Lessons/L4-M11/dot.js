@@ -3,6 +3,9 @@ const person = {
   age: 18,
   isSingle: true,
   pesha: "student",
+  " home address": "Rangpure",
 };
 
-console.log(person);
+// person.age = 20;
+// console.log(person);
+console.log(person[" home address"]);
