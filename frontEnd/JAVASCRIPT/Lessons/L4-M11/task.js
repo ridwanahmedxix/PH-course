@@ -51,8 +51,30 @@
 
 // * ================ Task - 05 ================
 
-const commitment = "I love my self";
-const parts = commitment.split("");
-const reverseParts = parts.reverse();
-const reverseCommitment = reverseParts.join("");
-console.log(reverseCommitment);
+// const commitment = "I love my self";
+// const parts = commitment.split("");
+// const reverseParts = parts.reverse();
+// const reverseCommitment = reverseParts.join("");
+// console.log(reverseCommitment);
+
+// * ================ Task - 06 ================
+
+// const students = {
+//   name: "Ridwan Ahmed",
+//   age: 18,
+//   grad: "A",
+//   isSingle: true,
+// };
+
+// console.log(students["age"]);
+
+// * ================ Task - 07 ================
+
+let car = { brand: "Toyota", model: "Corolla", year: 2022 };
+
+// console.log(car.brand);
+// console.log(car["brand"]);
+// console.log(car);
+car.color = "blue";
+car.year = 2026;
+console.log(car);
