@@ -6,5 +6,12 @@ const person = {
   " home address": "Rangpure",
 };
 
-const keys = Object.keys(person);
-console.log(keys);
+// const keys = Object.keys(person);
+// console.log(keys);
+
+// const values = Object.values(person);
+// console.log(values);
+
+// console.log(person);
+// delete person.pesha;
+// console.log(person);
