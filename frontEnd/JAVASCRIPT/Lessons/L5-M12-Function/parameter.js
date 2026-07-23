@@ -1,5 +1,7 @@
-function sayHello(name) {
-  return console.log("Hello ! ", name);
-}
+// function sayHello(name) {
+//   return console.log("Hello ! ", name);
+// }
 
-sayHello("Ridwan");
+// sayHello("Ridwan");
+
+// # ===================================================
