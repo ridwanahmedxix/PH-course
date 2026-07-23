@@ -6,8 +6,18 @@
 
 // ! ======================================================
 
-function fanOn() {
-  return console.log(" Fan is on ");
+// function fanOn() {
+//   return console.log(" Fan is on ");
+// }
+
+// console.log(fanOn());
+
+// ! ======================================================
+
+function sum(x, y) {
+  const result = x + y;
+  return result;
 }
 
-console.log(fanOn());
+const total = sum(11, 11);
+console.log(total);
