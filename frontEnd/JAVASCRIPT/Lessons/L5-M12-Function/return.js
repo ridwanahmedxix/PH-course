@@ -4,4 +4,6 @@ function cutHalf(number) {
   return half;
 }
 
-console.log("Anser :", cutHalf(50));
+const result = cutHalf(100);
+
+console.log(result);
