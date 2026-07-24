@@ -3,5 +3,5 @@ function chowdurify(name) {
   return fullName;
 }
 
-// const inputName = chowdurify("Ridwan");
-// console.log(inputName);
+const inputName = chowdurify("Ridwan");
+console.log(inputName);
