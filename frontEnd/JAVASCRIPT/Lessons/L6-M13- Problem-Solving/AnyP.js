@@ -64,14 +64,28 @@
 
 // # ========================================================
 
-function sumRange(number) {
-  let sum = 1;
-  for (let i = 1; i <= number; i++) {
-    sum = sum * i;
-    console.log(i);
-  }
+// function sumRange(number) {
+//   let sum = 1;
+//   for (let i = 1; i <= number; i++) {
+//     sum = sum * i;
+//     console.log(i);
+//   }
 
-  return sum;
-}
+//   return sum;
+// }
 
-console.log(sumRange(5));
+// console.log(sumRange(5));
+
+// # ========================================================
+
+// function factorial(number) {
+//   let result = 1;
+//   for (let i = 1; i <= number; i++) {
+//     result = result * i;
+//     console.log(i);
+//   }
+//   return result;
+// }
+// console.log(factorial(5));
+
+// # ========================================================
