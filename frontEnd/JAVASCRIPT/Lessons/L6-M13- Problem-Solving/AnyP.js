@@ -90,9 +90,11 @@
 
 // # ========================================================
 
-const commitment = "I Love You ";
-const parts = commitment.split("");
-const reversParts = parts.reverse();
-const reverseCommitment = reversParts.join("");
+// const commitment = "I Love You ";
+// const parts = commitment.split("");
+// const reversParts = parts.reverse();
+// const reverseCommitment = reversParts.join("");
 
-console.log(reverseCommitment);
+// console.log(reverseCommitment);
+
+// # ========================================================
