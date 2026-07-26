@@ -30,12 +30,34 @@
 
 // # ========================================================
 
-function evenOdd(numBer) {
-  if (numBer % 2 === 0) {
-    console.log("Even :", numBer);
-  } else {
-    console.log("Odd :", numBer);
-  }
+// function evenOdd(numBer) {
+//   if (numBer % 2 === 0) {
+//     console.log("Even :", numBer);
+//   } else {
+//     console.log("Odd :", numBer);
+//   }
+// }
+
+// evenOdd(11);
+
+// # ========================================================
+
+// let number = 7;
+
+// for (let i = 1; i <= 7; i++) {
+//   number = i + number;
+
+//   console.log(number);
+// }
+
+// # ========================================================
+
+let number = 7;
+let sum = 0;
+
+for (let i = 1; i <= number; i++) {
+  sum = sum + i;
+  console.log(i);
 }
 
-evenOdd(11);
+console.log(sum);

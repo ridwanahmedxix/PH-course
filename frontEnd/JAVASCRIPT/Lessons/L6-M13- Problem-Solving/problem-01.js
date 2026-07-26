@@ -1,4 +1,4 @@
-//  EvenOdd Checker & Sum of a Range
+// ?  EvenOdd Checker
 
 // const numbers = [11, 12, 13, 14, 15, 16];
 
