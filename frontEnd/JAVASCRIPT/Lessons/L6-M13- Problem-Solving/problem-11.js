@@ -14,7 +14,7 @@
 
 // # With Function
 
-function filterNumber(arr) {
+function getFilterArry(arr) {
   let value = 50;
   let filterArray = [];
   for (let i = 0; i < arr.length; i++) {
@@ -25,4 +25,4 @@ function filterNumber(arr) {
   return filterArray;
 }
 
-console.log(filterNumber([10, 30, 45, 67, 89, 90]));
+console.log(getFilterArry([10, 30, 45, 67, 89, 90]));
