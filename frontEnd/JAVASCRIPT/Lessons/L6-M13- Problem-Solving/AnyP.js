@@ -89,3 +89,10 @@
 // console.log(factorial(5));
 
 // # ========================================================
+
+const commitment = "I Love You ";
+const parts = commitment.split("");
+const reversParts = parts.reverse();
+const reverseCommitment = reversParts.join("");
+
+console.log(reverseCommitment);
