@@ -16,3 +16,17 @@
 // }
 
 // console.log(subtract(10, 3)); // Expected: 7 (currently returns -7)
+
+// Bug: explain this line out loud — what does str.length actually equal for ""?
+
+function isEmpty(str) {
+  if (str === "") {
+    // find the bug
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log(isEmpty("")); // Expected: true
+console.log(isEmpty("hi")); // Expected: false
