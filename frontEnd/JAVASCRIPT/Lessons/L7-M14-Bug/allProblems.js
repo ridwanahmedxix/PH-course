@@ -69,4 +69,4 @@ function countVowels(str) {
   return count;
 }
 
-// console.log(countVowels("orange")); // Expected: 3
+console.log(countVowels("orange")); // Expected: 3
