@@ -11,7 +11,7 @@
 //   console.log("Minor");
 // }
 
-// function add(a, b) {
-//   return a + b;
-// }
-// console.log(add(5));
+function add(a, b) {
+  return a + b;
+}
+console.log(add(5));
