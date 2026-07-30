@@ -20,3 +20,5 @@ function calculateAiCost(tokensUsed) {
 
   return totalCost;
 }
+
+console.log(calculateAiCost(620));
