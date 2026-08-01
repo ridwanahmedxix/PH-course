@@ -6,8 +6,8 @@
 
 // ! ========================================
 
-function makeCoffe(suger = 1) {
-  return `Your coffe with ${suger} tabel chamosh `;
+function makeCoffee(suger = 1) {
+  return `Your coffee with ${suger} tabel chamosh suger `;
 }
-console.log(makeCoffe(3));
-console.log(makeCoffe());
+console.log(makeCoffee(3));
+console.log(makeCoffee());
