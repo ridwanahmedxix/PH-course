@@ -1,4 +1,4 @@
-function Great(name) {
+function greet(name) {
   return ` Hello ${name}`;
 }
-console.log(Great("Ridwan"));
+console.log("Ridwan");
