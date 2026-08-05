@@ -1,7 +1,8 @@
 function cashRegister() {
   let amount = 0;
 
-  return function () {
+  return function (recevieAmount) {
+    amount + recevieAmount;
     return amount;
   };
 }
