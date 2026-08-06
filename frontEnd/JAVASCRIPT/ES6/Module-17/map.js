@@ -9,7 +9,7 @@
 
 let numBers = [2, 4, 6, 8, 10];
 
-const double = numBers.map(function (element) {
+const double = numBers.map((element) => {
   return element * 2;
 });
 
