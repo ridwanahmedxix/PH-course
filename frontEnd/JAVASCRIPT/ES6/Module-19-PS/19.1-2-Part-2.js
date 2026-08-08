@@ -17,3 +17,23 @@
       { name: "Utsho", marks: 60 },
     ]
 */
+
+const getPassingStudents = (students, threshold) => {
+  let filterStudent = students.filter((student) => {
+    console.log(student);
+    if (student.marks >= threshold) {
+      return true;
+    } else {
+      return false;
+    }
+  });
+  console.log(filterStudent);
+};
+
+let studentsData = [
+  { name: "Rafi", marks: 75 },
+  { name: "Karim", marks: 40 },
+  { name: "Utsho", marks: 60 },
+];
+
+console.log(getPassingStudents(studentsData, 50));
