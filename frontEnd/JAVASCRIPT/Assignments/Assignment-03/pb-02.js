@@ -10,5 +10,6 @@ function filterActiveUsers(users) {
   if (users.some((user) => !user.hasOwnProperty("isActive"))) {
     return "Invalid";
   }
+
   return users.filter((user) => user.isActive === true);
 }
