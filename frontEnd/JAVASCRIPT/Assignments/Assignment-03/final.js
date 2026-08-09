@@ -13,3 +13,18 @@ function studentIntroduction(student) {
 
   return `My name is ${student.name}. I am ${student.age} years old. I am learning ${student.course}.`;
 }
+
+function filterActiveUsers(users) {
+  if (!Array.isArray(users)) {
+    return "Invalid";
+  }
+
+  if (users.length === 0) {
+    return "Invalid";
+  }
+
+  if (users.some((user) => !user.hasOwnProperty("isActive"))) {
+    return "Invalid";
+  }
+  return users.filter((user) => user.isActive === true);
+}
