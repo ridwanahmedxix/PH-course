@@ -15,11 +15,7 @@ function studentIntroduction(student) {
 }
 
 function filterActiveUsers(users) {
-  if (!Array.isArray(users)) {
-    return "Invalid";
-  }
-
-  if (users.length === 0) {
+  if (!Array.isArray(users) || users.length === 0) {
     return "Invalid";
   }
 
