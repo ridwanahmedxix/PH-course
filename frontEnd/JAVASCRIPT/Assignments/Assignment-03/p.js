@@ -1,36 +1,29 @@
-// function studentIntroduction(student) {
-//   if (typeof student !== "object" || student === null) {
-//     return "Invalid";
-//   }
-
-//   if (
-//     !student.hasOwnProperty("name") ||
-//     !student.hasOwnProperty("age") ||
-//     !student.hasOwnProperty("course")
-//   ) {
-//     return "Inavlid";
-//   }
-
-//   return `My name is ${student.name} and my age ${student.age} and my favorite course ${student.course} `;
-// }
-
-// console.log(
-//   studentIntroduction({
-//     name: "Ridwan Ahmed",
-//     age: 18,
-//     course: "Web Development",
-//   }),
-// );
-
-// # ===========================================
-
-function filterActiveUsers(users) {
-  if (!Array.isArray(users) || users.length === 0) {
+function countHashtags(caption) {
+  if (typeof caption !== "string") {
     return "Invalid";
   }
 
-  if (users.some((user) => !user.hasOwnProperty("isActive"))) {
-    return "Invalid";
+  const words = caption.split(" ");
+
+  let hashTagCount = 0;
+  let longestHashTag = "";
+
+  for (let i = 0; i < words.length; i++) {
+    if (words[i].startsWith("#")) {
+      hashTagCount++;
+
+      const tag = words[i].slice(1);
+
+      if (tag.length > longestHashTag.length) {
+        longestHashTag = tag;
+      }
+    }
   }
-  return users.filter((user) => user.isActive === true);
+
+  return {
+    hashtagCount: hashTagCount,
+    longestTag: longestHashTag,
+  };
 }
+
+console.log(countHashtags("Loving this weather today #sunny #vibes #weekend"));
