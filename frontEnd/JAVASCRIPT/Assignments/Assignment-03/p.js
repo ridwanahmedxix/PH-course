@@ -6,8 +6,8 @@ function bonusScore(scores) {
     return "Invalid";
   }
 
-  // const updateScore = scores.map((score) => score + 10);
-  // const total = scores.reduce((sum, score) => sum + score, 0);
+  const updateScore = scores.map((score) => score + 10);
+  const total = scores.reduce((sum, score) => sum + score, 0);
   return total;
 }
 
