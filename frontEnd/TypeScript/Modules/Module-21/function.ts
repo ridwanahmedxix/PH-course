@@ -2,7 +2,7 @@
 //     const total = num1 + num2
 //     return total
 // }
-function add(num1: number, num2: number) {
+function add(num1: number, num2: number): number {
   const total = num1 + num2;
   return total;
 }
