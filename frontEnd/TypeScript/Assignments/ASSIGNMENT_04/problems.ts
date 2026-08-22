@@ -19,3 +19,7 @@ interface Booking {
 function formatBookingConfirmation(booking: Booking): string {
   return `${booking.name}'s table for ${booking.guests} guests is confirmed at ${booking.time}.`;
 }
+
+function calculateWeeklyTotal(expenses: number[]): number {
+  return expenses.reduce((total, expense) => total + expense, 0);
+}
