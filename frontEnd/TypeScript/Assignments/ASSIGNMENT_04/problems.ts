@@ -23,3 +23,15 @@ function formatBookingConfirmation(booking: Booking): string {
 function calculateWeeklyTotal(expenses: number[]): number {
   return expenses.reduce((total, expense) => total + expense, 0);
 }
+
+type Light = "red" | "yellow" | "green";
+
+function getTrafficAction(light: Light): string {
+  if (light === "red") {
+    return "Stop";
+  } else if (light === "yellow") {
+    return "Slow Down";
+  } else {
+    return "Go";
+  }
+}
