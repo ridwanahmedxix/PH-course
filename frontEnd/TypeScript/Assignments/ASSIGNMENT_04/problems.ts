@@ -35,3 +35,14 @@ function getTrafficAction(light: Light): string {
     return "Go";
   }
 }
+
+function getQuizSummary(scores: number[]): { total: number; average: number } {
+  const total = scores.reduce((sum, score) => sum + score, 0);
+
+  const average = scores.length === 0 ? 0 : total / scores.length;
+
+  return {
+    total,
+    average,
+  };
+}
